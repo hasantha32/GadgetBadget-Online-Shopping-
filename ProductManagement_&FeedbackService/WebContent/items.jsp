@@ -376,6 +376,7 @@
 						<div class="footer-top-box">
 							<h3>Social Media</h3>
 							<p>Visit our Gadget Badget.</p>
+							
 							<ul>
                                 <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
