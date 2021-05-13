@@ -26,7 +26,7 @@
 
 <link rel = "stylesheet" href = "Views/bootstrap.min.css">
 <script src = "Components/jquery-3.6.0.min.js"></script>
-<script src = "Components/items.js"></script>
+<script src = "Components/feedback.js"></script>
 
 
 
@@ -214,7 +214,7 @@
 
 		<h1 style="color:White;" >Items Management</h1>
 <div style="background-image: url('yellow.jfif');">
-	<form id="formItem" name="formItem"  >
+	<form id="formfeedback" name="formfeedback"  >
 		
 		<h2>Customer ID:</h2><input id="CustomerID" name="CustomerID" type="text" class="form-control form-control-sm"><br>
 		
@@ -229,7 +229,7 @@
 		
 		
 		<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
-		<input type="hidden" id="hidItemIDSave" name="hidItemIDSave" value=""> 
+		<input type="hidden" id="hidFIDSave" name="hidFIDSave" value=""> 
 		
 	</form>
   

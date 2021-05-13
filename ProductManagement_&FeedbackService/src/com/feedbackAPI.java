@@ -73,7 +73,7 @@ public class feedbackAPI extends HttpServlet {
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Map paras = getParasMap(request);
 		
-		String output = itemObj.updateItem(paras.get("hidItemIDSave").toString(),
+		String output = itemObj.updateItem(paras.get("hidIfeedbackIDSave").toString(),
 		paras.get("CustomerID").toString(),
 		paras.get("ItemID").toString(),
 		paras.get("FeedbackID").toString(),

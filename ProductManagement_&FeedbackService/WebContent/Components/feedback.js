@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 $(document).ready(function()
 {
 	if ($("#alertSuccess").text().trim() == "")
@@ -17,7 +20,7 @@ $(document).on("click", "#btnSave", function(event)
 	$("#alertError").hide();
 	
 	// Form validation-------------------
-	var status = validateItemForm();
+	var status = validateFeedbackForm();
 	if (status != true)
 	{
 	$("#alertError").text(status);
@@ -26,12 +29,12 @@ $(document).on("click", "#btnSave", function(event)
 	}
 	
 	// If valid------------------------
-	var type = ($("#hidItemIDSave").val() == "") ? "POST" : "PUT";
+	var type = ($("#hidFIDSave").val() == "") ? "POST" : "PUT";
 	$.ajax(
 	{
-	url : "ItemsAPI",
+	url : "feedbackAPI",
 	type : type,
-	data : $("#formItem").serialize(),
+	data : $("#formfeedback").serialize(),
 	dataType : "text",
 	complete : function(response, status)
 	{
@@ -65,18 +68,18 @@ function onItemSaveComplete(response, status)
 	$("#alertError").text("Unknown error while saving..");
 	$("#alertError").show();
 	}
-	$("#hidItemIDSave").val("");
-	$("#formItem")[0].reset();
+	$("#hidFIDSave").val("");
+	$("#formfeedback")[0].reset();
 }
 
 
 $(document).on("click", ".btnUpdate", function(event)
 {
-	$("#hidItemIDSave").val($(this).data("itemid"));
-	$("#itemCode").val($(this).closest("tr").find('td:eq(0)').text());
-	$("#itemName").val($(this).closest("tr").find('td:eq(1)').text());
-	$("#itemPrice").val($(this).closest("tr").find('td:eq(2)').text());
-	$("#itemDesc").val($(this).closest("tr").find('td:eq(3)').text());
+	$("#hidFIDSave").val($(this).data("FID"));
+	$("#CustomerID").val($(this).closest("tr").find('td:eq(0)').text());
+	$("#ItemID").val($(this).closest("tr").find('td:eq(1)').text());
+	$("#FeedbackID").val($(this).closest("tr").find('td:eq(2)').text());
+	$("#Feedback").val($(this).closest("tr").find('td:eq(3)').text());
 })
 
 
@@ -84,9 +87,9 @@ $(document).on("click", ".btnRemove", function(event)
 {
 	$.ajax(
 	{
-	url : "ItemsAPI",
+	url : "feedbackAPI",
 	type : "DELETE",
-	data : "itemID=" + $(this).data("itemid"),
+	data : "FID=" + $(this).data("FID"),
 	dataType : "text",
 	complete : function(response, status)
 	{
@@ -130,39 +133,32 @@ function onItemDeleteComplete(response, status)
 
 
 // CLIENT-MODEL================================================================
-function validateItemForm()
+function validatefeedbackForm()
 {
-// CODE
-	if ($("#itemCode").val().trim() == "")
+// customerID
+	if ($("#CustomerID").val().trim() == "")
 	{
-	return "Insert Item Code.";
+	return "Insert Customer ID.";
 	}
-	// NAME
-	if ($("#itemName").val().trim() == "")
+	// ItemID
+	if ($("#ItemID").val().trim() == "")
 	{
-	return "Insert Item Name.";
+	return "Insert Item ID.";
 }
 
-// PRICE-------------------------------
-if ($("#itemPrice").val().trim() == "")
+// FeedbackID-------------------------------
+if ($("#FeedbackID").val().trim() == "")
 {
-return "Insert Item Price.";
+return "Insert feedbackID.";
 }
 
-// is numerical value
-var tmpPrice = $("#itemPrice").val().trim();
-if (!$.isNumeric(tmpPrice))
-{
-return "Insert a numerical value for Item Price.";
-}
 
-// convert to decimal price
-$("#itemPrice").val(parseFloat(tmpPrice).toFixed(2));
 
-// DESCRIPTION------------------------
-if ($("#itemDesc").val().trim() == "")
+
+// feedback------------------------
+if ($("#Feedback").val().trim() == "")
 {
-return "Insert Item Description.";
+return "Insert Feedback.";
 }
 return true;
 }
