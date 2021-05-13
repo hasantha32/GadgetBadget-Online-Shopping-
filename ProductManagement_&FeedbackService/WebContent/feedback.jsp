@@ -192,10 +192,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Seller Account</h2>
+                    <h2>Feedbacks</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                        <li class="breadcrumb-item active">Seller Account</li>
+                        <li class="breadcrumb-item active">Feedbacks</li>
                     </ul>
                 </div>
             </div>
