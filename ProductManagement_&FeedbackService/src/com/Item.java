@@ -205,7 +205,7 @@ public String deleteItem(String itemID)
 			con.close();
 			
 			String newItems = readItems();
-			output = "{\"status\":\"success\", \"data\": \"" +
+			output = "{\"status\":\"Deleted successfully\", \"data\": \"" +
 			newItems + "\"}";
 	}
 	catch (Exception e)

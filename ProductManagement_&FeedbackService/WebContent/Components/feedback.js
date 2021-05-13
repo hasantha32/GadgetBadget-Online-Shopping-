@@ -1,6 +1,3 @@
-/**
- * 
- */
 $(document).ready(function()
 {
 	if ($("#alertSuccess").text().trim() == "")

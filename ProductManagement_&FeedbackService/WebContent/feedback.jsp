@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-     <%@page import = "com.Item" %>
+     <%@page import = "com.feedback" %>
       
      
 <!DOCTYPE html>
@@ -206,6 +206,7 @@
 
 
 
+
 <div class = "container"> 
 	<div class="row">
 		<div class="col">
@@ -214,14 +215,15 @@
 <div style="background-image: url('yellow.jfif');">
 	<form id="formItem" name="formItem"  >
 		
-		<h2>Item code:</h2><input id="itemCode" name="itemCode" type="text" class="form-control form-control-sm"><br>
+		<h2>Customer ID:</h2><input id="CustomerID" name="CustomerID" type="text" class="form-control form-control-sm"><br>
 		
 		 
-		<h2>Item name:</h2><input id="itemName" name="itemName" type="text" class="form-control form-control-sm"><br> 
+		<h2>Item ID:</h2><input id="ItemID" name="ItemID" type="text" class="form-control form-control-sm"><br> 
 		
-		<h2>Item price:</h2><input id="itemPrice" name="itemPrice" type="text" class="form-control form-control-sm"><br>
+		<h2>Feedback ID:</h2><input id="FeedbackID" name="FeedbackID" type="text" class="form-control form-control-sm"><br>
 		 
-		<h2>Item description:</h2><input id="itemDesc" name="itemDesc" type="text" class="form-control form-control-sm"><br>
+		<h2>Feedback:</h2><input id="Feedback" name="Feedback" type="text" class="form-control form-control-sm"><br>
+		
 		
 		
 		
@@ -236,7 +238,7 @@
     <br>
 	<div id="divItemsGrid">
 	<%
-	Item itemObj = new Item();
+	feedback itemObj = new feedback();
 	out.print(itemObj.readItems());
 	%>
 	</div>
@@ -347,6 +349,7 @@
     <!-- End Instagram Feed  -->
 
 
+   
     <!-- Start Footer  -->
     <footer>
         <div class="footer-main">
