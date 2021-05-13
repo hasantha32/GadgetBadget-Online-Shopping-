@@ -79,6 +79,7 @@
 					<div class="login-box">
 					       <div class="col-12 d-flex shopping-box"><a href="my-account.html" class="ml-auto btn hvr-hover">Logout</a> </div>
 						
+						
 					
 						
 					</div>
