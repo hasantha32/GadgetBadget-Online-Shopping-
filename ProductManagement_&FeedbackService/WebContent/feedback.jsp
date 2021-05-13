@@ -82,6 +82,7 @@
 						
 					
 						
+						
 					</div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
