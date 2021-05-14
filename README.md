@@ -1,4 +1,4 @@
-# GadgetBadget-PAFproject.
+# GadgetBadget-PAFproject
 
 <<<<<<< HEAD
 
