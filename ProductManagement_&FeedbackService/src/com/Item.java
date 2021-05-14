@@ -53,6 +53,7 @@ public String insertItem(String code, String name, String price, String desc)
 
 		preparedStmt.execute();
 		
+		
 		con.close();
 		
 		String newItems = readItems();
