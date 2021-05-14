@@ -65,12 +65,12 @@
 						</select>
                     </div>
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                        <p>Call US :- <a href="#"> +0814244525</a></p>
                     </div>
                     <div class="our-link">
                         <ul>
                             <li><a href="my-account.html"><i class="fa fa-user s_color"></i> My Account</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Feedback for products</a></li>
+                            <li><a href="feedback.jsp"><i class="fas fa-location-arrow"></i> Feedback for products</a></li>
                             <li><a href="contact-us.html"><i class="fas fa-headset"></i> Contact Us</a></li>
                         </ul>
                     </div>
