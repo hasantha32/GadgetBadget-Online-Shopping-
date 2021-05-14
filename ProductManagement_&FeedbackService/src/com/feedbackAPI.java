@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class feedbackAPI extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-  Item itemObj = new Item();
+  feedback feedbackObj = new feedback();
   
     public feedbackAPI() {
         super();
@@ -34,7 +34,7 @@ public class feedbackAPI extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String output = itemObj.insertItem(request.getParameter("CustomerID"),
+		String output = feedbackObj.insertItem(request.getParameter("CustomerID"),
 				request.getParameter("ItemID"),
 				request.getParameter("FeedbackID"),
 				request.getParameter("Feedback"));
@@ -73,7 +73,7 @@ public class feedbackAPI extends HttpServlet {
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Map paras = getParasMap(request);
 		
-		String output = itemObj.updateItem(paras.get("hidIfeedbackIDSave").toString(),
+		String output = feedbackObj.updateItem(paras.get("hidItemIDSave").toString(),
 		paras.get("CustomerID").toString(),
 		paras.get("ItemID").toString(),
 		paras.get("FeedbackID").toString(),
@@ -88,7 +88,7 @@ public class feedbackAPI extends HttpServlet {
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Map paras = getParasMap(request);
 		
-		String output = itemObj.deleteItem(paras.get("FID").toString());
+		String output = feedbackObj.deleteItem(paras.get("FID").toString());
 		
 		response.getWriter().write(output);
 	}

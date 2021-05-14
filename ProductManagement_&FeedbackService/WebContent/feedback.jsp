@@ -214,7 +214,7 @@
 
 		<h1 style="color:White;" >Items Management</h1>
 <div style="background-image: url('yellow.jfif');">
-	<form id="formfeedback" name="formfeedback"  >
+	<form id="formItem" name="formItem"  >
 		
 		<h2>Customer ID:</h2><input id="CustomerID" name="CustomerID" type="text" class="form-control form-control-sm"><br>
 		
@@ -229,7 +229,7 @@
 		
 		
 		<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
-		<input type="hidden" id="hidFIDSave" name="hidFIDSave" value=""> 
+		<input type="hidden" id="hidItemIDSave" name="hidItemIDSave" value=""> 
 		
 	</form>
   
@@ -239,8 +239,8 @@
     <br>
 	<div id="divItemsGrid">
 	<%
-	feedback itemObj = new feedback();
-	out.print(itemObj.readItems());
+	feedback feedbackObj = new feedback();
+	out.print(feedbackObj.readItems());
 	%>
 	</div>
 
@@ -251,13 +251,6 @@
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
 
 
 

@@ -20,7 +20,7 @@ $(document).on("click", "#btnSave", function(event)
 	$("#alertError").hide();
 	
 	// Form validation-------------------
-	var status = validateFeedbackForm();
+	var status = validateItemForm();
 	if (status != true)
 	{
 	$("#alertError").text(status);
@@ -29,12 +29,12 @@ $(document).on("click", "#btnSave", function(event)
 	}
 	
 	// If valid------------------------
-	var type = ($("#hidFIDSave").val() == "") ? "POST" : "PUT";
+	var type = ($("#hidItemIDSave").val() == "") ? "POST" : "PUT";
 	$.ajax(
 	{
 	url : "feedbackAPI",
 	type : type,
-	data : $("#formfeedback").serialize(),
+	data : $("#formItem").serialize(),
 	dataType : "text",
 	complete : function(response, status)
 	{
@@ -68,14 +68,14 @@ function onItemSaveComplete(response, status)
 	$("#alertError").text("Unknown error while saving..");
 	$("#alertError").show();
 	}
-	$("#hidFIDSave").val("");
-	$("#formfeedback")[0].reset();
+	$("#hidItemIDSave").val("");
+	$("#formItem")[0].reset();
 }
 
 
 $(document).on("click", ".btnUpdate", function(event)
 {
-	$("#hidFIDSave").val($(this).data("FID"));
+	$("#hidItemIDSave").val($(this).data("FID"));
 	$("#CustomerID").val($(this).closest("tr").find('td:eq(0)').text());
 	$("#ItemID").val($(this).closest("tr").find('td:eq(1)').text());
 	$("#FeedbackID").val($(this).closest("tr").find('td:eq(2)').text());
@@ -89,7 +89,7 @@ $(document).on("click", ".btnRemove", function(event)
 	{
 	url : "feedbackAPI",
 	type : "DELETE",
-	data : "FID=" + $(this).data("FID"),
+	data : "FID=" + $(this).data("feedbackid"),
 	dataType : "text",
 	complete : function(response, status)
 	{
@@ -133,7 +133,7 @@ function onItemDeleteComplete(response, status)
 
 
 // CLIENT-MODEL================================================================
-function validatefeedbackForm()
+function validateItemForm()
 {
 // customerID
 	if ($("#CustomerID").val().trim() == "")
