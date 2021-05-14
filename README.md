@@ -1,6 +1,6 @@
 # GadgetBadget-PAFproject
 
-<<<<<<< HEAD
+<<<<<<< HEAD>>
 
 #GadgetBadget
 
