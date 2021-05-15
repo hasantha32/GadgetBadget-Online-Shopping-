@@ -1,9 +1,9 @@
-# GadgetBadget-PAFproject.
+# GadgetBadget-PAFproject
 
 <<<<<<< HEAD
 
-GadgetBadget-PAFproject
-GadgetBadget-PAFproject
+#GadgetBadget
+
 
 
 branch 'main' of
