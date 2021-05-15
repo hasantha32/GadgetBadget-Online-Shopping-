@@ -139,6 +139,110 @@ public String readItems()
 	}
 
 
+
+
+
+
+
+
+
+
+public String setproductlabels()
+{
+	String output = "";
+	String outputs="";
+	try
+	{
+			Connection con = connect();
+			
+		if (con == null)
+		{
+			return "Error while connecting to the database for reading.";
+		}
+		
+		// Prepare the html table to be displayed
+        
+        output = "<center><table border='0'; width=100%;>";
+
+		String query = "select * from items";
+		
+	Statement stmt = con.createStatement();
+	
+	ResultSet rs = stmt.executeQuery(query);
+	
+	// iterate through the rows in the result set
+	
+	while (rs.next())
+	{
+		String itemID = Integer.toString(rs.getInt("itemID"));
+		String itemCode = rs.getString("itemCode");
+		String itemName = rs.getString("itemName");
+		String itemPrice = Double.toString(rs.getDouble("itemPrice"));
+		String itemDesc = rs.getString("itemDesc");
+		
+		// Add into the html table
+		output += "<tr><td><div class=\"student card bg-light m-2\"style=\"max-width: 50rem; float: left;\">";
+		output += "<div class=\"card-body\">";
+		output +=  itemName ;
+		output += "<br>";
+		output +=  itemDesc;
+		output += "<br>";
+		output +=  itemPrice;
+		output += "<br>";
+		
+		output +="</div></td>";
+		/*
+		 * <input name='btnUpdate' type='button' value='Update' class=' btnUpdate btn btn-secondary' data-itemid='" + itemID + "'>
+		  student += "<div class=\"student card bg-light m-2\"style=\"max-width: 10rem; float: left;\">";
+student += "<div class=\"card-body\">";
+student += title + " " + name + ",";
+student += "<br>";
+student += yearNumber + " year";
+student += "</div>";
+student += "<input type=\"button\" value=\"Remove\"class=\"btn btn-danger remove\">";
+student += "</div>";
+		 * 
+		 */
+		
+          
+  //buttons
+        
+        output += "<td><input name='btnOrder' type='button' value='Order' class=' btnUpdate btn btn-secondary' data-itemid='" + itemID + "'></td><tr>";
+        
+        		
+        		
+	}
+	
+	con.close();
+	
+	// Complete the html table
+	
+	output += "</table></center>";
+	}
+	catch (Exception e)
+	{
+		output = "Error while reading the items.";
+		System.err.println(e.getMessage());
+	}
+	
+	return output;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public String updateItem(String ID, String code, String name, String price, String desc)
 {
 		String output = "";

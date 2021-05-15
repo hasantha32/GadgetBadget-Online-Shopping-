@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%><%@page import = "com.Item" %>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
@@ -112,7 +114,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.jsp"><img src="images/logo.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -354,7 +356,7 @@
                             </div>
                         </div>
                         <div class="why-text">
-                            <h4>Asus ROG core i7 11th gen Gaming Laptop</h4>
+                            <h4>Asus ROG core Laptop</h4>
                             <h5> LKR 199570</h5>
                         </div>
                     </div>
@@ -428,10 +430,41 @@
                         </div>
                     </div>
                 </div>
+                
+				   <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    
+                        
+                          
+                            
+                          
+                               <div id="divItemsGrid">
+							<%
+								Item itemObject = new Item();
+								out.print(itemObject.setproductlabels());
+							%>
+						
+                            
+                        </div>
+                      
+                   
+                </div>
+                
+                
+                
             </div>
         </div>
+       
     </div>
     <!-- End Products  -->
+
+
+
+ 
+
+
+
+
+
 
     <!-- Start Blog  -->
     <div class="latest-blog">
