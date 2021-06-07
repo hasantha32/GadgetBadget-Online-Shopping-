@@ -13,6 +13,7 @@ https://github.com/hasantha32/GadgetBadget-PAFproject.git
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
+    GadgetBadget_online shopping
   }
 }
 ```
