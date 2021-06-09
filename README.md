@@ -1,6 +1,4 @@
 # GadgetBadget-PAFproject
-- - -
-# GadgetBadge<h1> 
 ## Oline Shpiing Mart <h2> 
 - - -
 branch 'main' of
