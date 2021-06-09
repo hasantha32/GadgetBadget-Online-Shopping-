@@ -2,8 +2,6 @@
 - - -
 # GadgetBadge<h1> 
 ## Oline Shpiing Mart <h2> 
-
-#GadgetBadget
 - - -
 branch 'main' of
 https://github.com/hasantha32/GadgetBadget-PAFproject.git
