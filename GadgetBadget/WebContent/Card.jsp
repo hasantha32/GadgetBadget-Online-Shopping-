@@ -6,6 +6,20 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>User Management</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Item handling</title>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Gadget-Badget</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
 	<link rel="stylesheet" href="Views/bootstrap.min.css">
 	<script src="Components/jquery-3.2.1.min.js"></script>
 	<script src="Components/pay.js"></script>
