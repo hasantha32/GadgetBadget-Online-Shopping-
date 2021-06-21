@@ -146,7 +146,7 @@ public String readItems()
 
 
 
-
+//View  products on home page
 public String setproductlabels()
 {
 	String output = "";
