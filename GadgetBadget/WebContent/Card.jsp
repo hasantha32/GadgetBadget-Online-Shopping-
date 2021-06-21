@@ -45,6 +45,83 @@
 	
 </head>
 <body>
+
+
+ <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+							<option>¥ JPY</option>
+							<option>$ USD</option>
+							<option>€ EUR</option>
+						</select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <li><a href="my-account.html"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li><a href="#"><i class="fas fa-location-arrow"></i> Feedback for products</a></li>
+                            <li><a href="contact-us.html"><i class="fas fa-headset"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="login-box">
+					       <div class="col-12 d-flex shopping-box"><a href="my-account.html" class="ml-auto btn hvr-hover">Logout</a> </div>
+						
+						
+					
+						
+						
+					</div>
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Beets headphones
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop drone cameras
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop  CANON cameras
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Samsung phones
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+
+
+
+
+
+
+
 	<div class="container">
 		<div class="row">
 			<div class="col-6"> 
