@@ -177,10 +177,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Feedbacks</h2>
+                    <h2>CardDetails</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                        <li class="breadcrumb-item active">Feedbacks</li>
+                        <li class="breadcrumb-item active">CardDetails</li>
                     </ul>
                 </div>
             </div>
