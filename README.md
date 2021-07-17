@@ -1,5 +1,5 @@
 # GadgetBadget-PAFproject
-## Oline Shpiing Mart <h2> 
+## Oline Shopping Mart <h2> 
 - - -
 branch 'main' of
 https://github.com/hasantha32/GadgetBadget-PAFproject.git
